@@ -1,0 +1,219 @@
+{
+ "updatedAt": "2026-10-15T10:30:00Z",
+ "cfg": {
+  "start": 100,
+  "bonus": 50,
+  "ratio": 0.5,
+  "minStake": 1
+ },
+ "rounds": [
+  {
+   "id": "r01",
+   "name": "3. Hafta",
+   "stage": "Lig Aşaması",
+   "order": 1,
+   "final": false,
+   "opensAt": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "m74165940",
+   "round": "r01",
+   "home": "Fenerbahçe",
+   "away": "Slavia Prag",
+   "kickoff": 1792514700000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165940"
+  },
+  {
+   "id": "m74165942",
+   "round": "r01",
+   "home": "Sabah",
+   "away": "B. Dortmund",
+   "kickoff": 1792514700000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165942"
+  },
+  {
+   "id": "m74165944",
+   "round": "r01",
+   "home": "Roma",
+   "away": "Slovan Bratislava",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165944"
+  },
+  {
+   "id": "m74165946",
+   "round": "r01",
+   "home": "Porto",
+   "away": "PSV",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165946"
+  },
+  {
+   "id": "m74165948",
+   "round": "r01",
+   "home": "Liverpool",
+   "away": "Villarreal",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165948"
+  },
+  {
+   "id": "m74165950",
+   "round": "r01",
+   "home": "Manchester City",
+   "away": "AEK",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165950"
+  },
+  {
+   "id": "m74165952",
+   "round": "r01",
+   "home": "PSG",
+   "away": "Barcelona",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165952"
+  },
+  {
+   "id": "m74165954",
+   "round": "r01",
+   "home": "Napoli",
+   "away": "Bodø/Glimt",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165954"
+  },
+  {
+   "id": "m74165956",
+   "round": "r01",
+   "home": "Stuttgart",
+   "away": "Atletico Madrid",
+   "kickoff": 1792522800000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165956"
+  },
+  {
+   "id": "m74165958",
+   "round": "r01",
+   "home": "Como",
+   "away": "Manchester United",
+   "kickoff": 1792601100000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165958"
+  },
+  {
+   "id": "m74165960",
+   "round": "r01",
+   "home": "Lille",
+   "away": "Galatasaray",
+   "kickoff": 1792601100000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165960"
+  },
+  {
+   "id": "m74165962",
+   "round": "r01",
+   "home": "Aston Villa",
+   "away": "Viking",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165962"
+  },
+  {
+   "id": "m74165964",
+   "round": "r01",
+   "home": "Club Brugge",
+   "away": "Lens",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165964"
+  },
+  {
+   "id": "m74165966",
+   "round": "r01",
+   "home": "Bayern Münih",
+   "away": "Arsenal",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165966"
+  },
+  {
+   "id": "m74165968",
+   "round": "r01",
+   "home": "Inter",
+   "away": "Shakhtar Donetsk",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165968"
+  },
+  {
+   "id": "m74165970",
+   "round": "r01",
+   "home": "Real Madrid",
+   "away": "RB Leipzig",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165970"
+  },
+  {
+   "id": "m74165972",
+   "round": "r01",
+   "home": "Real Betis",
+   "away": "Feyenoord",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165972"
+  },
+  {
+   "id": "m74165974",
+   "round": "r01",
+   "home": "Sporting",
+   "away": "LASK",
+   "kickoff": 1792609200000,
+   "mbs": 1,
+   "status": "sched",
+   "odds": {},
+   "sr": "sr:sport_event:74165974"
+  }
+ ]
+}

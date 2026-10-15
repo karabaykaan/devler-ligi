@@ -1,0 +1,47 @@
+name: Firebase yönetimi
+
+# Kurallar değişince yayınlar; her 5 dakikada bekleyen şifre sıfırlamalarını uygular.
+on:
+  push:
+    branches: [main]
+    paths: ['firestore.rules', 'scripts/**', '.github/workflows/firebase-admin.yml']
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: firebase-admin
+  cancel-in-progress: false
+
+jobs:
+  admin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+    steps:
+      - name: Gizli değeri kontrol et
+        id: chk
+        run: |
+          if [ -z "$SA" ]; then
+            echo "FIREBASE_SERVICE_ACCOUNT tanımlı değil; atlanıyor."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.chk.outputs.skip != '1'
+      - uses: actions/setup-node@v4
+        if: steps.chk.outputs.skip != '1'
+        with:
+          node-version: 20
+      - name: Bağımlılıkları kur
+        if: steps.chk.outputs.skip != '1'
+        working-directory: scripts
+        run: npm install --no-audit --no-fund --loglevel=error
+      - name: Çalıştır
+        if: steps.chk.outputs.skip != '1'
+        env:
+          DEPLOY_RULES: ${{ github.event_name != 'schedule' }}
+        run: node scripts/admin.mjs

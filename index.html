@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Devler Ligi Kuponu</title>
+<meta name="description" content="Arkadaşlar arası Şampiyonlar Ligi kupon oyunu.">
+<meta name="theme-color" content="#131A33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Devler Ligi">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="band" id="hdr">
+  <div class="wrap">
+    <div class="b-top">
+      <div class="brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="7" width="28" height="20" rx="3" fill="none" stroke="#F2C23D" stroke-width="2"/><circle cx="3" cy="17" r="3.5" fill="#131A33" stroke="#F2C23D" stroke-width="2"/><circle cx="31" cy="17" r="3.5" fill="#131A33" stroke="#F2C23D" stroke-width="2"/><path d="M11 13h12M11 17h8M11 21h10" stroke="#F1F3FA" stroke-width="2" stroke-linecap="round"/></svg>
+        <div>
+          <div class="b-title">Devler Ligi Kuponu</div>
+          <button class="b-who" id="hdr-who" data-act="account" hidden></button>
+        </div>
+      </div>
+      <div class="kasa" hidden><div class="k-lbl" id="hdr-klbl">Kasa</div><div class="k-val" id="hdr-kasa">—</div></div>
+    </div>
+    <div id="hdr-week"></div>
+  </div>
+</header>
+<main class="wrap" id="view" aria-live="polite"><div class="empty"><b>Yükleniyor</b>Bağlantı kuruluyor.</div></main>
+<div class="slipbar" id="slipbar" hidden><div class="wrap"><button class="slipbtn" data-act="slip-open" id="slipbtn"></button></div></div>
+<nav class="tabs" id="tabs-nav" aria-label="Bölümler" hidden><div class="tabs-in" id="tabs"></div></nav>
+<div class="sheet" id="sheet" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<noscript><p class="wrap">Bu site JavaScript gerektirir.</p></noscript>
+<script src="js/logic.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
