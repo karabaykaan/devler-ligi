@@ -1,0 +1,41 @@
+{
+ "status": {
+  "type": {
+   "id": "28",
+   "name": "STATUS_FULL_TIME",
+   "state": "post",
+   "completed": true,
+   "description": "Full Time",
+   "detail": "FT",
+   "shortDetail": "FT"
+  }
+ },
+ "competitors": [
+  {
+   "homeAway": "home",
+   "team": "Feyenoord Rotterdam",
+   "score": "3",
+   "linescores": [
+    {
+     "displayValue": "1"
+    },
+    {
+     "displayValue": "2"
+    }
+   ]
+  },
+  {
+   "homeAway": "away",
+   "team": "Como",
+   "score": "2",
+   "linescores": [
+    {
+     "displayValue": "1"
+    },
+    {
+     "displayValue": "1"
+    }
+   ]
+  }
+ ]
+}

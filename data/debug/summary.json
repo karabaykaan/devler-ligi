@@ -5,7 +5,7 @@
  },
  "iddaaEvents": {
   "status": 200,
-  "bytes": 4452825,
+  "bytes": 4452826,
   "topKeys": [
    "isSuccess",
    "data",
@@ -46,9 +46,9 @@
  },
  "nesine": {
   "status": 200,
-  "bytes": 11676618
+  "bytes": 12208479
  },
- "nesineEvents": 1978,
+ "nesineEvents": 1997,
  "nesineKeys": [
   "C",
   "EV",
@@ -86,5 +86,50 @@
  "espnNext": {
   "status": 400,
   "events": []
+ },
+ "espnSummary": {
+  "status": 200,
+  "keys": [
+   "boxscore",
+   "format",
+   "gameInfo",
+   "lastFiveGames",
+   "leaders",
+   "broadcasts",
+   "pickcenter",
+   "odds",
+   "hasOdds",
+   "rosters",
+   "news",
+   "videos",
+   "header",
+   "keyEvents",
+   "commentary",
+   "wallclockAvailable",
+   "meta",
+   "standings"
+  ]
+ },
+ "espnOct20": {
+  "status": 200,
+  "events": [
+   "401915403 2026-10-20T16:45Z Slavia Prague at Fenerbahce",
+   "401915404 2026-10-20T16:45Z Borussia Dortmund at Sabah FK",
+   "401915402 2026-10-20T19:00Z Slovan Bratislava at AS Roma",
+   "401915398 2026-10-20T19:00Z PSV Eindhoven at FC Porto",
+   "401915397 2026-10-20T19:00Z Villarreal at Liverpool",
+   "401915401 2026-10-20T19:00Z AEK Athens at Manchester City",
+   "401915400 2026-10-20T19:00Z Bodo/Glimt at Napoli",
+   "401915399 2026-10-20T19:00Z Barcelona at Paris Saint-Germain",
+   "401915392 2026-10-20T19:00Z Atlético Madrid at VfB Stuttgart"
+  ]
+ },
+ "https://sportsbookv2.iddaa.com/sportsbook/results?st=1": {
+  "status": 404,
+  "bytes": 0
+ },
+ "https://statisticsv2.iddaa.com/statistics/results/1": {
+  "status": 404,
+  "bytes": 0
  }
 }

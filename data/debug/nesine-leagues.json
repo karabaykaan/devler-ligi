@@ -20,8 +20,8 @@
   "Goias GO - Nautico PE 20.10.2026"
  ],
  "24": [
-  "Leicester City - Doncaster 17.10.2026",
-  "Wigan Ath - Reading 17.10.2026"
+  "Mansfield - Oxford 15.10.2026",
+  "Leicester City - Doncaster 17.10.2026"
  ],
  "37": [
   "Necaxa - Atlas 17.10.2026",
@@ -197,9 +197,6 @@
  "742": [
   "Chippa Utd - Kruger Utd 17.10.2026"
  ],
- "957": [
-  "W. Flensburg - Drochtersen 16.10.2026"
- ],
  "970": [
   "Rhode Island - Pittsburgh R. 18.10.2026",
   "Tampa Bay - Detroit City 18.10.2026"
@@ -225,9 +222,6 @@
  ],
  "1004": [
   "Sandhausen - Offenbacher 16.10.2026"
- ],
- "1005": [
-  "Rodinghausen - Köln II 16.10.2026"
  ],
  "1199": [
   "MC Oran - USM Khenchela 17.10.2026",
@@ -421,10 +415,6 @@
   "Tiszakecske - Csakvar 17.10.2026",
   "Ajka - Bvsc Zuglo 17.10.2026"
  ],
- "2901": [
-  "Carapegua - Resistencia 17.10.2026",
-  "Deportivo Santani - 3 de Noviembre 19.10.2026"
- ],
  "2938": [
   "Rayo Zuliano - Caracas 18.10.2026",
   "Dep. La Gua. - Trujillanos 17.10.2026"
@@ -493,13 +483,24 @@
  "10008": [
   "Estudiantes - Flamengo 16.10.2026"
  ],
+ "10010": [
+  "London Lions - Frankfurt 15.10.2026"
+ ],
  "10011": [
-  "Kızıl Yıldız - Paris 16.10.2026",
-  "Zalgiris Kaunas - Anadolu Efes 16.10.2026"
+  "Real Madrid - Asvel Vil. 15.10.2026",
+  "Valencia - M. Tel Aviv 15.10.2026"
+ ],
+ "10015": [
+  "D. Zagreb - Anderlecht 15.10.2026",
+  "J. Bialystok - Ararat 15.10.2026"
  ],
  "10027": [
   "Enisey Krasnoyarsk - CSKA Moskova 17.10.2026",
   "BC Samara - BK Uralmash Yekaterinburg 17.10.2026"
+ ],
+ "10029": [
+  "BC Namur Capitale (K) - Chartres (K) 15.10.2026",
+  "Lattes Montp (K) - Porta XI Ensino (K) 15.10.2026"
  ],
  "10048": [
   "Airtel Kitara - El Ahly (Mıs) 17.10.2026",
@@ -562,10 +563,6 @@
  "10305": [
   "Phoenix Puls - Meralco 16.10.2026"
  ],
- "10313": [
-  "TVF Spor Lisesi - Şiran Akademi 18.10.2026",
-  "Niksar Bld - Tokat Bld Spor 18.10.2026"
- ],
  "10314": [
   "Sakarya Voleybol (K) - Muratpaşa Bld. (K) 17.10.2026",
   "Ted Ankara Kolejliler (K) - İlbank 2 (K) 17.10.2026"
@@ -577,12 +574,21 @@
   "Sutherland S. - South Melbourne 17.10.2026",
   "Broadmeadow Mag - Apia Leic. 17.10.2026"
  ],
+ "10373": [
+  "Philadelphia 76ers (Salvador) - Denver Nuggets (Sevilla) 15.10.2026",
+  "Los Angeles Clippers (Buenosaires) - Phoenix Suns (Lagos) 15.10.2026"
+ ],
  "10420": [
   "Banfield - Argentinos J. 17.10.2026",
   "CA Platense - Lanus 17.10.2026"
  ],
  "10421": [
+  "Central Espanol - Danubio 15.10.2026",
   "Nacional - Club Atl Rentistas 16.10.2026"
+ ],
+ "10422": [
+  "Porto - F. Berlin 15.10.2026",
+  "Sporting Lizbon - Szeged 15.10.2026"
  ],
  "14408": [
   "Vikingur Gota - AB Argir 18.10.2026",
@@ -630,7 +636,7 @@
  ],
  "16961": [
   "CD Suchitepequez - Dep. San Pedro 16.10.2026",
-  "CSD Imperial - Municipal 16.10.2026"
+  "Xelaju - Malacateco 15.10.2026"
  ],
  "17001": [
   "Akm Tula - Gornyak Uchaly 16.10.2026",
@@ -724,7 +730,7 @@
  ],
  "19644": [
   "Araski (K) - UNI Girona CB (K) 17.10.2026",
-  "AE Sedis Basquet (K) - CB Estudiantes (K) 17.10.2026"
+  "Zaragoza (K) - Porta XI Ensino (K) 17.10.2026"
  ],
  "19710": [
   "Ferencvaros TC - Budai Farkasok Nkft 16.10.2026",
@@ -739,8 +745,7 @@
   "Fremad Amager - Nykoebing 16.10.2026"
  ],
  "21641": [
-  "C.D. Cacahuatique - Alianza 18.10.2026",
-  "Atletico Balboa - CD Aguila 19.10.2026"
+  "Angel Firpo - CD Inca 16.10.2026"
  ],
  "21721": [
   "Barranquilla - Tigres (Kol) 16.10.2026",
@@ -772,9 +777,6 @@
  "22462": [
   "Sbb Baskets Wolmirstedt - EPG Baskets Koblenz 16.10.2026",
   "Tigers Tubingen - Bochum 16.10.2026"
- ],
- "22622": [
-  "Real Madrid (K) - RCD Espanyol (K) 17.10.2026"
  ],
  "22625": [
   "Fujairah - Palm City 16.10.2026",
@@ -826,12 +828,16 @@
   "Alpla HC Hard - Linz AG 16.10.2026",
   "Handball Tirol - Wat Atzgersdorf 17.10.2026"
  ],
+ "27596": [
+  "MKS Piotrcovia (K) - SPR Sosnica Gliwice (K) 15.10.2026"
+ ],
  "27604": [
-  "UMF Stjarnan - KA Akureyri 16.10.2026",
-  "Vikingur Reykjavik - Valur 16.10.2026"
+  "Haukar - UMF Selfoss 15.10.2026",
+  "Afturelding - HK Kopavogs 15.10.2026"
  ],
  "27609": [
-  "Merano - Khl Sisak 16.10.2026"
+  "HC Asiago - SG Cortina 15.10.2026",
+  "Gherdeina - WSV Broncos 15.10.2026"
  ],
  "27610": [
   "Roskilde Haandbold (K) - Ajax Copenhagen (K) 16.10.2026",
@@ -929,9 +935,8 @@
   "Club Bigua De Villa Biarritz - Hebraica Macabi 20.10.2026",
   "Defensor Sporting - CA Goes 20.10.2026"
  ],
- "29230": [
-  "Sarıçam Bld - Sivas İl Özel İdare SK 18.10.2026",
-  "Elazığ GSİM - Diyarbakır BBSK 18.10.2026"
+ "28583": [
+  "Oudegem (K) - VDK Gent (K) 15.10.2026"
  ],
  "33266": [
   "Newroz SC - AL Minaa 16.10.2026",
@@ -990,9 +995,6 @@
   "Pumas Unam (K) - Atlas (K) 18.10.2026",
   "Monterrey (K) - Cruz Azul (K) 18.10.2026"
  ],
- "38306": [
-  "Suwon Hillstate (K) - GS Caltex Seoul KIXX (K) 16.10.2026"
- ],
  "38462": [
   "UAB Blazers - East Carolina Pirates 16.10.2026",
   "Old Dominion Monarchs - Georgia Southern Eagles 16.10.2026"
@@ -1009,35 +1011,40 @@
   "Ventura County - Minnesota Utd 2 17.10.2026",
   "Portland Timbers II - Saint Louis City SC 2 17.10.2026"
  ],
+ "46196": [
+  "Twente - Thun 15.10.2026",
+  "St. Truidense - Iberia 1999 15.10.2026"
+ ],
  "46269": [
   "Limburg Utd - Rotterdam City Basketball 16.10.2026",
   "Excels Brus - BC Oostende 16.10.2026"
  ],
  "46776": [
-  "RC Celta de Vigo (Eros) - AC Milan (Fox) 15.10.2026",
-  "Besiktas Istanbul (Dusan) - AC Milan (Fox) 15.10.2026"
+  "AC Milan (Fox) - RC Celta de Vigo (Eros) 15.10.2026",
+  "AFC Bournemouth (Crysis) - Olympique Lyon (Banega) 15.10.2026"
  ],
  "46779": [
   "Newcastle Eagles - Manchester Basketball 16.10.2026",
   "Caledonia Gladiators - Sheffield Sharks 16.10.2026"
  ],
- "47656": [
-  "1954 Hendek SK - İnebolu SK 18.10.2026",
-  "İzmir Bşb - Irmak SK 18.10.2026"
- ],
  "49047": [
-  "Atletico Madrid (Cleo) - Real Madrid (Donatello) 15.10.2026",
-  "Manchester City FC (Eric) - Real Madrid (Donatello) 15.10.2026"
+  "Real Madrid (Donatello) - Atletico Madrid (Cleo) 15.10.2026",
+  "Manchester City FC (Eric) - Atletico Madrid (Cleo) 15.10.2026"
  ],
- "49060": [
-  "Olympiacos (Professor) - Bayer 04 Leverkusen (Amado) 15.10.2026",
-  "Olympiacos (Professor) - Olympique Marseille (Fernando) 15.10.2026"
+ "49068": [
+  "Villarreal (Gael) - Athletic Bilbao (Kai) 15.10.2026",
+  "Real Madrid (Spartan) - Athletic Bilbao (Kai) 15.10.2026"
  ],
- "52446": [
-  "Belgium (Kai) - France (Spartan) 15.10.2026",
-  "Portugal (Gael) - Netherlands (Lorenzo) 15.10.2026"
+ "49071": [
+  "Manchester United (Cleo) - Tottenham Hotspur FC (Maverick) 15.10.2026",
+  "Newcastle (Donatello) - Everton FC (Eric) 15.10.2026"
+ ],
+ "52374": [
+  "FC Porto (Lost) - AS Roma (Troy) 15.10.2026",
+  "Atletico Madrid (Penn) - AS Roma (Troy) 15.10.2026"
  ],
  "52581": [
+  "Atletico Rojiblanco - Indep. Juniors 15.10.2026",
   "San Antonio - Cuenca Juniors 16.10.2026"
  ],
  "54250": [
@@ -1098,6 +1105,9 @@
  "81453": [
   "Lig Etabı İkili Maç - Alınan Toplam Puan 20.10.2026"
  ],
+ "82463": [
+  "Altafratte (K) - Vbc Casalma (K) 15.10.2026"
+ ],
  "82493": [
   "R. Jodar - C. Ruud 16.10.2026",
   "D. Medvedev - T. Paul 16.10.2026"
@@ -1127,16 +1137,16 @@
   "G. A. Knutson - M. Kubka 16.10.2026"
  ],
  "83278": [
-  "M. Martineau - S. Gueymard Wayenburg 16.10.2026",
-  "J. Kym - D. S. Stricker 16.10.2026"
+  "J. Kym - D. S. Stricker 16.10.2026",
+  "F. Balshaw - M. Brunold 16.10.2026"
  ],
  "83279": [
   "A. Sanchez Quilez - L. Mikrut 16.10.2026",
   "L. Giustino - Z. Piros 16.10.2026"
  ],
  "83282": [
-  "G. Cadenasso - M. Moeller 16.10.2026",
-  "M. Wiskandt - M. Giunta 16.10.2026"
+  "M. Wiskandt - M. Giunta 16.10.2026",
+  "B. Gadamauri - F. Gill 16.10.2026"
  ],
  "83283": [
   "L. A. Queiroz Miguel - H. Dellien 16.10.2026",
@@ -1168,8 +1178,8 @@
  "83300": [
   "A. Heinonen/M. Vrbensky - T. Pereira/B. Winter Lopez 16.10.2026"
  ],
- "83302": [
-  "G. Feistel/R. G. Serban - F. Jorge/M. Jorge 16.10.2026"
+ "83301": [
+  "D. Stevenson/M. Willis - F. Balshaw/M. Martineau 15.10.2026"
  ],
  "83449": [
   "J. C. Aguilar/S. de la Fuente - L. G. Miguel/E. Ribeiro 16.10.2026",
