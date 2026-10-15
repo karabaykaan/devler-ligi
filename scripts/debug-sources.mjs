@@ -85,5 +85,18 @@ if (espn.json) {
 const espn2 = await get('https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261020-20261021');
 summary.espnNext = { status: espn2.status, events: espn2.json && (espn2.json.events || []).map((e) => e.date + ' ' + e.name) };
 
+const sumR = await get('https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915416');
+summary.espnSummary = { status: sumR.status, keys: sumR.json ? Object.keys(sumR.json) : null };
+if (sumR.json && sumR.json.header) {
+  const comp = (sumR.json.header.competitions || [])[0] || {};
+  save('espn-summary-header.json', { status: comp.status, competitors: (comp.competitors || []).map((c) => ({ homeAway: c.homeAway, team: c.team && c.team.displayName, score: c.score, linescores: c.linescores })) });
+}
+const sc2 = await get('https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261020');
+summary.espnOct20 = { status: sc2.status, events: sc2.json && (sc2.json.events || []).map((e) => e.id + ' ' + e.date + ' ' + e.name) };
+// iddaa sonuç uç noktaları (varsa)
+for (const u of ['https://sportsbookv2.iddaa.com/sportsbook/results?st=1', 'https://statisticsv2.iddaa.com/statistics/results/1']) {
+  const r = await get(u, { Origin: 'https://www.iddaa.com', Referer: 'https://www.iddaa.com/' });
+  summary[u] = { status: r.status, bytes: r.bytes };
+}
 save('summary.json', summary);
 console.log(JSON.stringify(summary, null, 1));
