@@ -9,7 +9,7 @@ Arkadaşlar arası Şampiyonlar Ligi kupon oyunu. Gerçek para yok; herkes 100 i
 | Site | GitHub Pages (`index.html`, `style.css`, `js/`) |
 | Hesaplar | Firebase Authentication: kullanıcı adı + şifre (e-posta istenmez) |
 | Oyuncular, kuponlar, yönetici düzeltmeleri | Firestore (`players`, `coupons`, `overrides`, `adjust`, `resets`) |
-| Maçlar, oranlar, sonuçlar | `data/feed.json` (her sabah otomatik güncellenir) |
+| Maçlar, oranlar, sonuçlar | `data/feed.json` (saatte bir `scripts/update-feed.mjs` ile güncellenir: oranlar iddaa'dan, Nesine'dekiyle aynı değerler; sonuçlar ESPN'den) |
 | Kasalar ve sıralama | Tarayıcıda hesaplanır (`js/logic.js`), saklanmaz |
 
 Yöneticinin panelde yaptığı değişiklikler (`overrides`) `feed.json`'daki değerlerin önüne geçer.

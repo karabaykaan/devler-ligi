@@ -4,6 +4,7 @@ import { ADMIN_UNAME, RESERVED, normUser, cleanName, errText } from './common.js
 const L = window.L;
 const num = L.num, r2 = L.r2;
 const FEED_URL = 'data/feed.json';
+const STATUS_URL = 'data/update-status.json';
 const FEED_EVERY = 120000;
 
 const LS = {
@@ -29,7 +30,7 @@ const VIEWS = TABS.map((t) => t.id).concat(['hesap']);
 const S = {
   be: null, user: null, authReady: false, unsub: null,
   loaded: {}, players: [], coupons: [], overrides: [], adjust: [], resets: [],
-  feed: null, feedAt: 0, feedErr: false,
+  feed: null, feedAt: 0, feedErr: false, upd: null,
   tab: 'bulten', amode: 'in', setup: false,
   slip: [], stake: '', sheet: false, confirm: false, busy: false,
   cmode: 'me', vround: null, more: {}, prow: {}, aRound: null, aMatch: null, aPlayer: null,
@@ -501,6 +502,16 @@ function adminView() {
   if (!S.aRound || !S.ctx.roundMap[S.aRound]) S.aRound = (S.active || rs.find((r) => r._state === 'soon') || rs[rs.length - 1] || {}).id || null;
   const fu = S.feed && S.feed.updatedAt ? dt(Date.parse(S.feed.updatedAt)) : 'bilinmiyor';
   let h = '<div class="sec-h"><h2>Yönetim</h2><span class="muted small">Bülten dosyası: ' + esc(fu) + '</span></div><div class="adm">';
+  const up = S.upd;
+  if (up) {
+    const warns = (up.warnings || []);
+    h += '<div class="card"><h3 class="h3">Otomatik güncelleme ' + (warns.length || up.iddaa === false ? '<span class="pill closed">' + (warns.length || 1) + ' uyarı</span>' : '<span class="pill open">Sorun yok</span>') + '</h3>' +
+      '<p class="small muted" style="margin:2px 0 0">Oranlar ve sonuçlar saatte bir iddaa ve ESPN\'den çekilir.' + (up.lastChange ? ' Son değişiklik: ' + esc(dt(Date.parse(up.lastChange))) + '.' : '') + '</p>' +
+      (up.iddaa === false ? '<p class="small" style="margin:6px 0 0;color:var(--loss)">iddaa\'ya son denemede ulaşılamadı.</p>' : '') +
+      (warns.length ? '<ul class="small" style="margin:6px 0 0;padding-left:18px">' + warns.map((w) => '<li>' + esc(w) + '</li>').join('') + '</ul>' : '') +
+      ((up.lastChanges || []).length ? '<details class="adm-more"><summary>Son yapılan değişiklikler</summary><ul class="small" style="margin:6px 0 0;padding-left:18px">' + up.lastChanges.map((w) => '<li>' + esc(w) + '</li>').join('') + '</ul></details>' : '') +
+      '</div>';
+  }
   h += playersCard();
   h += '<div class="card"><h3 class="h3">Haftalar</h3><div class="adm-list">' + (rs.length ? rs.map((r) => {
     const ask = 'open:' + r.id;
@@ -761,6 +772,9 @@ async function loadFeed() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const f = await res.json();
     S.feed = f; S.feedAt = Date.now(); S.feedErr = false;
+    if (isAdmin()) {
+      try { const r2s = await fetch(STATUS_URL + '?t=' + Date.now(), { cache: 'no-store' }); S.upd = r2s.ok ? await r2s.json() : null; } catch (e) { S.upd = null; }
+    }
   } catch (e) {
     S.feedErr = true; if (!S.feedAt) S.feedAt = Date.now();
   }
