@@ -1,0 +1,90 @@
+{
+ "iddaaComp": {
+  "status": 200,
+  "bytes": 57928
+ },
+ "iddaaEvents": {
+  "status": 200,
+  "bytes": 4452825,
+  "topKeys": [
+   "isSuccess",
+   "data",
+   "message"
+  ]
+ },
+ "iddaaEventCount": 1151,
+ "iddaaEventKeys": [
+  "i",
+  "bri",
+  "v",
+  "hn",
+  "an",
+  "sid",
+  "s",
+  "bp",
+  "il",
+  "mbc",
+  "kOdd",
+  "m",
+  "ci",
+  "oc",
+  "d",
+  "hc"
+ ],
+ "iddaaUclEvents": 49,
+ "https://sportsbookv2.iddaa.com/sportsbook/get_markets?st=1": {
+  "status": 404,
+  "bytes": 0
+ },
+ "https://sportsbookv2.iddaa.com/sportsbook/market-config": {
+  "status": 404,
+  "bytes": 0
+ },
+ "https://contentv2.iddaa.com/sportsbook/market-groups?sportType=1": {
+  "status": 404,
+  "bytes": 0
+ },
+ "nesine": {
+  "status": 200,
+  "bytes": 11676618
+ },
+ "nesineEvents": 1978,
+ "nesineKeys": [
+  "C",
+  "EV",
+  "ENN",
+  "TYPE",
+  "GT",
+  "D",
+  "ESD",
+  "ED",
+  "DAY",
+  "T",
+  "P",
+  "LC",
+  "BC",
+  "LE",
+  "BP",
+  "BS",
+  "NS",
+  "MA",
+  "MSA",
+  "CE",
+  "BRID",
+  "NID",
+  "OLE",
+  "HPI",
+  "API",
+  "HLID",
+  "ALID"
+ ],
+ "espn": {
+  "status": 200,
+  "bytes": 110366
+ },
+ "espnEvents": 9,
+ "espnNext": {
+  "status": 400,
+  "events": []
+ }
+}

@@ -1,0 +1,191 @@
+[
+ {
+  "i": 1868,
+  "cid": "GB",
+  "p": 19680,
+  "ic": "https://i.iddaa.com/i/iddaa/90/gb.png",
+  "sn": "Championsh",
+  "si": "1",
+  "n": "Kuzey İrlanda Championship 1",
+  "cref": 8793
+ },
+ {
+  "i": 2074,
+  "cid": "INT",
+  "p": 2174,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "Şamp Ligi",
+  "si": "2",
+  "n": "Şampiyonlar Ligi",
+  "cref": 54378
+ },
+ {
+  "i": 861,
+  "cid": "INT",
+  "p": 961,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "Şamp Ligi",
+  "si": "2",
+  "n": "Şampiyonlar Ligi, Playofflar",
+  "cref": 54381
+ },
+ {
+  "i": 126,
+  "cid": "INT",
+  "p": 5,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "UEFA ŞampL",
+  "si": "1",
+  "n": "UEFA Şampiyonlar Ligi",
+  "cref": 23
+ },
+ {
+  "i": 81305,
+  "cid": "CL",
+  "p": 81405,
+  "ic": "https://i.iddaa.com/i/iddaa/90/cl.png",
+  "sn": "LNB",
+  "si": "2",
+  "n": "Şili LNB, Championship Round",
+  "cref": 197408
+ },
+ {
+  "i": 46756,
+  "cid": "INT",
+  "p": 46856,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "Arap Şampi",
+  "si": "23",
+  "n": "Arab Championship",
+  "cref": 75610
+ },
+ {
+  "i": 613,
+  "cid": "GB",
+  "p": 64,
+  "ic": "https://i.iddaa.com/i/iddaa/90/gb.png",
+  "sn": "Championsh",
+  "si": "1",
+  "n": "İskoçya Championship",
+  "cref": 55
+ },
+ {
+  "i": 54708,
+  "cid": "AU",
+  "p": 110,
+  "ic": "https://i.iddaa.com/i/iddaa/90/au.png",
+  "sn": "Avust. Şm.",
+  "si": "1",
+  "n": "Avustralya Australian Championship, Group",
+  "cref": 175445
+ },
+ {
+  "i": 54709,
+  "cid": "AU",
+  "p": 54809,
+  "ic": "https://i.iddaa.com/i/iddaa/90/au.png",
+  "sn": "Avust. Şm.",
+  "si": "1",
+  "n": "Avustralya Australian Championship, Group",
+  "cref": 175443
+ },
+ {
+  "i": 80665,
+  "cid": "INT",
+  "p": 80765,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "GTŞL6 2x6",
+  "si": "137",
+  "n": "GT Champions League 6",
+  "cref": 196712
+ },
+ {
+  "i": 52,
+  "cid": "GB",
+  "p": 26,
+  "ic": "https://i.iddaa.com/i/iddaa/90/gb.png",
+  "sn": "Championsh",
+  "si": "1",
+  "n": "İngiltere Championship",
+  "cref": 2
+ },
+ {
+  "i": 54707,
+  "cid": "AU",
+  "p": 72,
+  "ic": "https://i.iddaa.com/i/iddaa/90/au.png",
+  "sn": "Avust. Şm.",
+  "si": "1",
+  "n": "Avustralya Australian Championship, Group",
+  "cref": 175449
+ },
+ {
+  "i": 46194,
+  "cid": "INT",
+  "p": 6,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "UEFA Şamp",
+  "si": "1",
+  "n": "UEFA Şampiyonlar Ligi",
+  "cref": 151665
+ },
+ {
+  "i": 81453,
+  "cid": "INT",
+  "p": 3,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "sn": "ŞL FBveGS",
+  "si": "1",
+  "n": "Şampiyonlar Ligi FB ve GS Özel",
+  "cref": -81453
+ },
+ {
+  "i": 245009,
+  "cid": "INT",
+  "p": 3595,
+  "ic": "https://i.iddaa.com/i/iddaa/90/int.png",
+  "si": "1",
+  "n": "CAF Şampiyonlar Ligi",
+  "cref": 3870
+ },
+ {
+  "i": 54706,
+  "cid": "AU",
+  "p": 109,
+  "ic": "https://i.iddaa.com/i/iddaa/90/au.png",
+  "sn": "Avust. Şm.",
+  "si": "1",
+  "n": "Avustralya Australian Championship, Group",
+  "cref": 175447
+ },
+ {
+  "i": 1926,
+  "cid": "GB",
+  "p": 47,
+  "ic": "https://i.iddaa.com/i/iddaa/90/gb.png",
+  "sn": "Championsh",
+  "si": "1",
+  "n": "İskoçya Championship, Düşme/Yükselme P",
+  "cref": 4366
+ },
+ {
+  "i": 2701,
+  "cid": "ZA",
+  "p": 103,
+  "ic": "https://i.iddaa.com/i/iddaa/90/za.png",
+  "sn": "Championsh",
+  "si": "1",
+  "n": "Güney Afrika Championship",
+  "cref": 10119
+ },
+ {
+  "i": 970,
+  "cid": "US",
+  "p": 35,
+  "ic": "https://i.iddaa.com/i/iddaa/90/us.png",
+  "sn": "ABD Champi",
+  "si": "1",
+  "n": "ABD Championship",
+  "cref": 78360
+ }
+]
