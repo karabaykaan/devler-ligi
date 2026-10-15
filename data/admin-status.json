@@ -6,7 +6,7 @@
  },
  "rules": {
   "ok": false,
-  "at": "2026-10-15T20:46:59.555Z",
+  "at": "2026-10-15T20:48:11.009Z",
   "error": "Caller does not have required permission to use project devler-ligi. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=devler-ligi and then retry. Propagation of the new permission may take a few minutes."
  }
 }
