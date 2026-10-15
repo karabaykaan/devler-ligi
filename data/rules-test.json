@@ -1,0 +1,97 @@
+{
+ "at": "2026-10-15T21:12:03.316Z",
+ "gecti": 15,
+ "toplam": 15,
+ "results": [
+  {
+   "test": "Giriş yapmamış biri oyuncuları okuyamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu kendi kaydını açar",
+   "beklenen": "izin",
+   "status": 200,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Başkası adına oyuncu kaydı açılamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Başka kullanıcı adıyla kayıt açılamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu kendi kaydını değiştiremez (ad, kasa vb.)",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncular okunabilir",
+   "beklenen": "izin",
+   "status": 200,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu kendi kuponunu sunucu saatiyle yapar",
+   "beklenen": "izin",
+   "status": 200,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Kupon değiştirilemez",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Başkası adına kupon yapılamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Kupon saati elle (geçmişe) yazılamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu kaydı olmayan kupon yapamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu oran/sonuç değiştiremez",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu kasa düzeltmesi ekleyemez",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu şifre sıfırlama isteği yazamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  },
+  {
+   "test": "Oyuncu şifre sıfırlama isteklerini okuyamaz",
+   "beklenen": "red",
+   "status": 403,
+   "sonuc": "GEÇTİ"
+  }
+ ]
+}
