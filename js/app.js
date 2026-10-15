@@ -537,7 +537,7 @@ function playersCard() {
     const row = S.rows.find((x) => x.id === p.id);
     const reset = S.resets.find((x) => x.id === p.id);
     const open = S.aPlayer === p.id;
-    let x = '<div class="adm-row' + (p.removed ? ' off' : '') + '"><div class="cp-who">' + av(p.id) + '<div style="min-width:0"><b>' + esc(p.name || p.uname) + '</b><div class="small muted">@' + esc(p.uname) + (row ? ' · kasa ' + money(row.lg.bal) : '') + (p.removed ? ' · oyundan çıkarıldı' : '') + (reset ? ' · şifre sıfırlama bekliyor' : '') + '</div></div></div>' +
+    let x = '<div class="adm-row' + (p.removed ? ' off' : '') + '"><div class="cp-who">' + av(p.id) + '<div style="min-width:0"><b>' + esc(p.name || p.uname) + '</b><div class="small muted">@' + esc(p.uname) + (row ? ' · kasa ' + money(row.lg.bal) : '') + (p.removed ? ' · oyundan çıkarıldı' : '') + (reset ? (reset.error ? ' · şifre sıfırlanamadı: ' + esc(reset.error) : ' · şifre sıfırlama bekliyor') : '') + '</div></div></div>' +
       '<button class="btn sm ghost" data-act="a-psel" data-v="' + esc(p.id) + '" aria-expanded="' + open + '">' + (open ? 'Kapat' : 'Düzenle') + '</button></div>';
     if (open) {
       const pid = esc(p.id);

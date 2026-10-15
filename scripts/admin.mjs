@@ -24,7 +24,7 @@ try {
 } catch (e) {
   status.serviceAccount = { ok: false, at: now, error: fail('Hizmet hesabı', e) };
   save();
-  process.exit(1);
+  process.exit(0);
 }
 status.serviceAccount = { ok: true, project: sa.project_id, email: sa.client_email };
 
@@ -70,4 +70,5 @@ try {
 }
 
 save();
-if (failed) process.exit(1);
+// Hata olsa da iş akışı başarılı biter; sorunlar admin-status.json'da ve yönetim panelinde görünür.
+if (failed) console.log('Bazı adımlar başarısız oldu; ayrıntılar data/admin-status.json içinde.');
