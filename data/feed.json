@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T18:46:49.733Z",
+ "updatedAt": "2026-10-20T21:56:20.871Z",
  "cfg": {
   "start": 100,
   "bonus": 50,
@@ -182,9 +182,19 @@
    "away": "Slovan Bratislava",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {},
-   "sr": "sr:sport_event:74165944"
+   "sr": "sr:sport_event:74165944",
+   "espn": "401915402",
+   "ht": [
+    2,
+    0
+   ],
+   "ft": [
+    4,
+    0
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165946",
@@ -193,7 +203,7 @@
    "away": "PSV",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {
     "AU25": {
      "A": 2.22,
@@ -253,7 +263,17 @@
     }
    },
    "sr": "sr:sport_event:74165946",
-   "code": 3224197
+   "code": 3224197,
+   "espn": "401915398",
+   "ht": [
+    0,
+    0
+   ],
+   "ft": [
+    0,
+    1
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165948",
@@ -262,7 +282,7 @@
    "away": "Villarreal",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {
     "AU25": {
      "A": 2.43,
@@ -321,7 +341,17 @@
     }
    },
    "sr": "sr:sport_event:74165948",
-   "code": 3223961
+   "code": 3223961,
+   "espn": "401915397",
+   "ht": [
+    2,
+    2
+   ],
+   "ft": [
+    4,
+    3
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165950",
@@ -330,9 +360,19 @@
    "away": "AEK",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {},
-   "sr": "sr:sport_event:74165950"
+   "sr": "sr:sport_event:74165950",
+   "espn": "401915401",
+   "ht": [
+    2,
+    0
+   ],
+   "ft": [
+    5,
+    1
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165952",
@@ -341,7 +381,7 @@
    "away": "Barcelona",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {
     "AU25": {
      "A": 4.17,
@@ -399,7 +439,17 @@
     }
    },
    "sr": "sr:sport_event:74165952",
-   "code": 3224058
+   "code": 3224058,
+   "espn": "401915399",
+   "ht": [
+    1,
+    0
+   ],
+   "ft": [
+    4,
+    2
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165954",
@@ -408,7 +458,7 @@
    "away": "Bodø/Glimt",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {
     "AU25": {
      "A": 2.38,
@@ -468,7 +518,17 @@
     }
    },
    "sr": "sr:sport_event:74165954",
-   "code": 3224158
+   "code": 3224158,
+   "espn": "401915400",
+   "ht": [
+    2,
+    1
+   ],
+   "ft": [
+    4,
+    3
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165956",
@@ -477,7 +537,7 @@
    "away": "Atletico Madrid",
    "kickoff": 1792522800000,
    "mbs": 1,
-   "status": "sched",
+   "status": "ft",
    "odds": {
     "AU25": {
      "A": 2.19,
@@ -538,7 +598,17 @@
     }
    },
    "sr": "sr:sport_event:74165956",
-   "code": 3224221
+   "code": 3224221,
+   "espn": "401915392",
+   "ht": [
+    1,
+    0
+   ],
+   "ft": [
+    1,
+    1
+   ],
+   "doneAt": 1792533380871
   },
   {
    "id": "m74165958",
