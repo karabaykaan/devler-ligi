@@ -222,7 +222,7 @@ ordered.forEach((r, idx) => {
 });
 
 // 3) Sonuçlar (ESPN)
-const due = feed.matches.filter((m) => (m.status || 'sched') === 'sched' && m.kickoff + 110 * 60e3 < NOW && m.kickoff > NOW - 10 * 24 * H);
+const due = feed.matches.filter((m) => (m.status || 'sched') === 'sched' && m.kickoff + 100 * 60e3 < NOW && m.kickoff > NOW - 10 * 24 * H);
 const dayKey = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, '');
 const days = [...new Set(due.map((m) => dayKey(m.kickoff)))];
 const espnEvents = [];
