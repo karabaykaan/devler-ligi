@@ -288,3 +288,15 @@ table.led{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeri
 .adm-more summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent)}
 .adm .card{display:grid;gap:6px}
 .band{padding-top:env(safe-area-inset-top,0px)}
+
+/* Kupon filtreleri */
+.cfilters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cf-round{flex:0 1 auto;min-width:0}
+.cf-round select{padding:7px 30px 7px 10px;font-size:13px;font-weight:500;border-radius:9px;max-width:100%}
+.cf-res{flex-wrap:wrap}
+.cf-res button{padding:6px 10px}
+.cf-n{font:500 11px/1 var(--f-mono);color:var(--muted);margin-left:2px}
+.cf-res button[aria-pressed="true"] .cf-n{color:var(--accent)}
+.cf-sum{margin:-6px 0 0}
+.cf-sum b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.cf-sum .pay{color:var(--win)}

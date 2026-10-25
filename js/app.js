@@ -33,7 +33,7 @@ const S = {
   feed: null, feedAt: 0, feedErr: false, upd: null,
   tab: 'bulten', amode: 'in', setup: false,
   slip: [], stake: '', sheet: false, confirm: false, busy: false,
-  cmode: 'me', vround: null, more: {}, prow: {}, aRound: null, aMatch: null, aPlayer: null,
+  cmode: 'me', cround: 'all', cres: 'all', vround: null, more: {}, prow: {}, aRound: null, aMatch: null, aPlayer: null,
   draft: {}, dirty: false, ask: null
 };
 
@@ -429,17 +429,40 @@ function couponCard(row, c, showWho) {
     (st.reason ? '<div class="cp-reason">' + esc(st.reason) + ' · kasadan düşülmedi</div>' : '') +
     '<ul class="cp-sel">' + sel + '</ul><div class="cp-f">' + foot + '</div>' + adm + '</article>';
 }
+const RES_FILTERS = [['all', 'Tümü'], ['won', 'Tuttu'], ['lost', 'Tutmadı'], ['pending', 'Bekliyor']];
 function couponsView() {
   const mode = isAdmin() ? 'all' : S.cmode;
-  let h = '<div class="sec-h"><h2>Kuponlar</h2>' + (isAdmin() ? '<span class="muted small">Tüm oyuncular</span>' : '<div class="seg" role="group" aria-label="Kupon filtresi"><button data-act="cmode" data-v="me" aria-pressed="' + (mode === 'me') + '">Benim</button><button data-act="cmode" data-v="all" aria-pressed="' + (mode === 'all') + '">Herkes</button></div>') + '</div>';
+  let h = '<div class="sec-h"><h2>Kuponlar</h2>' + (isAdmin() ? '<span class="muted small">Tüm oyuncular</span>' : '<div class="seg" role="group" aria-label="Kimin kuponları"><button data-act="cmode" data-v="me" aria-pressed="' + (mode === 'me') + '">Benim</button><button data-act="cmode" data-v="all" aria-pressed="' + (mode === 'all') + '">Herkes</button></div>') + '</div>';
   const list = [];
   S.rows.forEach((row) => {
     if (mode === 'me' && row.id !== S.user.uid) return;
-    row.lg.coupons.forEach((c) => list.push({ row, c }));
+    row.lg.coupons.forEach((c) => list.push({ row, c, st: (row.lg.cs[c.id] || { status: 'pending' }).status }));
   });
   list.sort((a, b) => b.c.at - a.c.at);
   if (!list.length) return h + '<div class="empty"><b>' + (mode === 'me' ? 'Henüz kuponun yok' : 'Henüz kimse kupon yapmadı') + '</b>' + (isAdmin() ? 'Oyuncular kupon yaptıkça burada görünür.' : 'Bültenden oran seçerek kupon oluştur; kupon alttaki çubukta birikir.') + '</div>';
-  return h + '<div class="cps">' + list.map((x) => couponCard(x.row, x.c, mode === 'all')).join('') + '</div>';
+
+  // Hafta ve sonuç filtreleri
+  const roundsWith = S.ctx.rounds.filter((r) => list.some((x) => x.c.round === r.id));
+  if (S.cround !== 'all' && !roundsWith.some((r) => r.id === S.cround)) S.cround = 'all';
+  const byRound = list.filter((x) => S.cround === 'all' || x.c.round === S.cround);
+  const count = (k) => byRound.filter((x) => k === 'all' || x.st === k).length;
+  const shown = byRound.filter((x) => S.cres === 'all' || x.st === S.cres);
+  h += '<div class="cfilters">' +
+    '<label class="cf-round"><span class="sr">Hafta</span><select id="cf-round">' +
+    '<option value="all"' + (S.cround === 'all' ? ' selected' : '') + '>Tüm haftalar</option>' +
+    roundsWith.map((r) => '<option value="' + esc(r.id) + '"' + (S.cround === r.id ? ' selected' : '') + '>' + esc(r.name) + '</option>').join('') +
+    '</select></label>' +
+    '<div class="seg cf-res" role="group" aria-label="Sonuç">' + RES_FILTERS.map(([k, t]) =>
+      '<button data-act="cres" data-v="' + k + '" aria-pressed="' + (S.cres === k) + '">' + t + ' <span class="cf-n">' + count(k) + '</span></button>').join('') + '</div>' +
+    '</div>';
+  if (!shown.length) {
+    const what = { won: 'tutan', lost: 'tutmayan', pending: 'sonucu bekleyen' }[S.cres] || '';
+    return h + '<div class="empty"><b>Bu filtreye uyan kupon yok</b>' + (S.cround === 'all' ? 'Hiçbir haftada ' : 'Bu haftada ') + (what ? what + ' ' : '') + 'kupon bulunmuyor.</div>';
+  }
+  const won = shown.reduce((s, x) => s + (x.st === 'won' ? (x.row.lg.cs[x.c.id].payout || 0) : 0), 0);
+  const staked = shown.reduce((s, x) => s + (x.st === 'invalid' ? 0 : x.c.stake), 0);
+  h += '<p class="cf-sum small muted">' + shown.length + ' kupon · Yatırılan <b>' + money(staked) + '</b>' + (won ? ' · Kazanılan <b class="pay">' + money(won) + '</b>' : '') + '</p>';
+  return h + '<div class="cps">' + shown.map((x) => couponCard(x.row, x.c, mode === 'all')).join('') + '</div>';
 }
 
 /* Sıralama */
@@ -602,7 +625,7 @@ async function play() {
   try {
     await S.be.placeCoupon(coupon);
     S.slip = []; S.stake = ''; S.confirm = false; S.sheet = false; saveSlip();
-    S.tab = 'kuponlar'; S.cmode = 'me';
+    S.tab = 'kuponlar'; S.cmode = 'me'; S.cres = 'all'; S.cround = 'all';
     toast('Kupon oynandı: ' + money(coupon.stake) + ' · oran ' + odd(ck.tot));
   } catch (e) { toast(wErr(e), true); S.confirm = false; }
   S.busy = false; render(true); window.scrollTo(0, 0);
@@ -717,6 +740,7 @@ document.addEventListener('click', (ev) => {
     case 'play-cancel': S.confirm = false; renderSheet(); break;
     case 'play-confirm': play(); break;
     case 'cmode': S.cmode = v; render(true); break;
+    case 'cres': S.cres = v; LS.set('dlk-cres', v); render(true); break;
     case 'prow': S.prow[v] = !S.prow[v]; render(true); break;
     case 'a-open': adminOpen(v); break;
     case 'a-rsel': S.aRound = v; S.aMatch = null; render(true); break;
@@ -757,7 +781,11 @@ document.addEventListener('input', (ev) => {
   if (t.id === 'stake') { S.stake = t.value; updateSlipLive(); return; }
   if (t.id && /^(a-|f-)/.test(t.id) && t.type !== 'password' && !/^a-(user|pass)/.test(t.id)) S.draft[t.id] = t.value;
 });
-document.addEventListener('change', (ev) => { const t = ev.target; if (t.id && /^(a-[jr]|a-st-|f-)/.test(t.id)) S.draft[t.id] = t.value; });
+document.addEventListener('change', (ev) => {
+  const t = ev.target;
+  if (t.id === 'cf-round') { S.cround = t.value; LS.set('dlk-cround', t.value); t.blur(); render(true); return; }
+  if (t.id && /^(a-[jr]|a-st-|f-)/.test(t.id)) S.draft[t.id] = t.value;
+});
 document.addEventListener('focusout', () => { setTimeout(() => { if (S.dirty) render(); }, 0); });
 document.addEventListener('keydown', (ev) => {
   if (ev.key === 'Escape' && S.sheet) { S.sheet = false; S.confirm = false; renderSheet(); renderChrome(); }
@@ -809,6 +837,8 @@ function boot() {
   S.setup = h === 'kurulum';
   if (S.setup) S.amode = 'up';
   S.tab = VIEWS.indexOf(h) >= 0 ? h : LS.get('dlk-tab', 'bulten');
+  S.cround = String(LS.get('dlk-cround', 'all'));
+  S.cres = RES_FILTERS.some(([k]) => k === LS.get('dlk-cres', 'all')) ? LS.get('dlk-cres', 'all') : 'all';
   render(true);
   try { S.be = createBackend(); }
   catch (e) {
