@@ -5,8 +5,8 @@
   "email": "firebase-adminsdk-fbsvc@devler-ligi.iam.gserviceaccount.com"
  },
  "rules": {
-  "ok": false,
-  "at": "2026-10-20T18:46:54.758Z",
-  "error": "Caller does not have required permission to use project devler-ligi. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=devler-ligi and then retry. Propagation of the new permission may take a few minutes."
+  "ok": true,
+  "at": "2026-11-25T10:49:08.391Z",
+  "ruleset": "70310bdf-8353-47db-aa96-75f0f9ddc569"
  }
 }
