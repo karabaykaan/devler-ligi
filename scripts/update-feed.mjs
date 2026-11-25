@@ -129,7 +129,7 @@ function oddsFrom(ev) {
     }
   }
   if (hnd) out.HND = Object.assign({ h: hnd.n > 0 ? hnd.n + ':0' : '0:' + (-hnd.n) }, hnd.o);
-  if (!out.MS || Object.keys(out.MS).length < 3) return null;
+  if (!out.MS || Object.keys(out.MS).length < 2) return null;
   return out;
 }
 
